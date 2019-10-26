@@ -1,0 +1,113 @@
+{
+  "pages": [
+    "pages/login/main",
+    "pages/homeAuth/main",
+    "pages/home/main",
+    "pages/homeCheckObjectDetailUpload/main",
+    "pages/homeCheckObjectDetail/main",
+    "pages/homeCheckObject/main",
+    "pages/homeCheck/main",
+    "pages/homeProblemDetailDeal/main",
+    "pages/homeProblemDetail/main",
+    "pages/homeProblem/main",
+    "pages/homeAlertDetailUpload/main",
+    "pages/homeAlertDetail/main",
+    "pages/homeAlert/main",
+    "pages/homeExam/main",
+    "pages/homeAlertMap/main",
+    "pages/homeAlertMapDetail/main",
+    "pages/homeNews/main",
+    "pages/newsDetail/main",
+    "pages/userDetail/main",
+    "pages/jobAuth/main",
+    "pages/job/main",
+    "pages/jobCproblem/main",
+    "pages/jobCalert/main",
+    "pages/jobCtask/main",
+    "pages/workDevice/main",
+    "pages/workDeviceDetail/main",
+    "pages/townAlert/main",
+    "pages/userMsg/main",
+    "pages/index/main",
+    "pages/user/main",
+    "pages/userEdit/main",
+    "pages/workCheck/main",
+    "pages/workCheckFuck/main",
+    "pages/townExamRule/main",
+    "pages/townExamQues/main",
+    "pages/townExam/main",
+    "pages/work/main",
+    "pages/town/main",
+    "pages/townGeneral/main",
+    "pages/contact/main",
+    "pages/maintenanceHome/main",
+    "pages/maintenance/main",
+    "pages/maintenanceObject/main",
+    "pages/maintenanceJob/main",
+    "pages/townAnalyze/main",
+    "pages/proManagerHome/main",
+    "pages/proManagerJob/main",
+    "pages/examConfirm/main",
+    "pages/examing/main",
+    "pages/townAlertList/main",
+    "pages/townProblem/main",
+    "pages/townWorkDevice/main",
+    "pages/controlRoom/main",
+    "pages/video/main",
+    "pages/deviceWarnUpload/main",
+    "pages/homeAlertCancelUpload/main",
+    "pages/userPortraitUpload/main",
+    "pages/dealFire/main"
+
+  ],
+  "window": {
+    "titlePenetrate": "YES"
+  },
+  "tabBar": {
+    "textColor": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "oldItems": [{
+      "name": "首页",
+      "pagePath": "pages/index/main",
+      "icon": "static/tabs/home_normal_icon.png",
+      "activeIcon": "static/tabs/home_active_icon.png"
+    }, {
+      "name": "园区",
+      "pagePath": "pages/town/main",
+      "icon": "static/tabs/town_normal_icon.png",
+      "activeIcon": "static/tabs/town_active_icon.png"
+    }, {
+      "name": "工作",
+      "pagePath": "pages/work/main",
+      "icon": "static/tabs/work_normal_icon.png",
+      "activeIcon": "static/tabs/work_active_icon.png"
+    }, {
+      "name": "通讯",
+      "pagePath": "pages/contact/main",
+      "icon": "static/tabs/users_normal_icon.png",
+      "activeIcon": "static/tabs/users_active_icon.png"
+    }],
+    "list": [{
+      "name": "首页",
+      "pagePath": "pages/homeAuth/main",
+      "icon": "static/tabs/home_normal_icon.png",
+      "activeIcon": "static/tabs/home_active_icon.png"
+    }, {
+      "name": "工作",
+      "pagePath": "pages/jobAuth/main",
+      "icon": "static/tabs/work_normal_icon.png",
+      "activeIcon": "static/tabs/work_active_icon.png"
+    }, {
+      "name": "通讯",
+      "pagePath": "pages/contact/main",
+      "icon": "static/tabs/users_normal_icon.png",
+      "activeIcon": "static/tabs/users_active_icon.png"
+    }, {
+      "name": "我的",
+      "pagePath": "pages/user/main",
+      "icon": "static/tabs/work_normal_icon.png",
+      "activeIcon": "static/tabs/work_active_icon.png"
+    }]
+  }
+}

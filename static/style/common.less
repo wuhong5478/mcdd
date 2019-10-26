@@ -1,0 +1,162 @@
+// 主色
+@color-main: #409EFF;
+
+// 辅助色表
+@color-func-success: #67C23A;
+@color-func-warning: #E6A23C;
+@color-func-danger: #F56C6C;
+@color-func-info: #909399;
+
+// 常规中性文字颜色表
+@color-text-main: #303133;
+@color-text-normal: #606266;
+@color-text-minor: #909399;
+@color-text-holder: #C0C4CC;
+
+// 盒模型内间距
+.padding-normal() {
+  padding: 20rpx;
+}
+
+// 盒模型弧度
+.border-radius-small() {
+  border-radius: 3rpx;
+  overflow: hidden;
+}
+.border-radius-normal() {
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+.border-radius-large() {
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.border-radius-huge() {
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.border-radius-circle() {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+// 盒模型阴影
+.box-shadow-large() {
+  box-shadow: 0px 19px 36px 4px rgba(17, 127, 225, 0.1);
+}
+.box-shadow-small() {
+  box-shadow: 0px 0px 10px 0px rgba(17, 127, 225, 0.1);
+}
+
+// 盒模型下分割线 
+.border-bottom() {
+  border-bottom: 1rpx solid rgba(242,242,242,1);
+}
+
+// 盒模型上分割线 
+.border-top() {
+  border-top: 1rpx solid rgba(242,242,242,1);
+}
+
+// 灰色背景
+.gray-background() {
+  background-color: #f5f5f5;
+}
+
+// 白色背景
+.white-background() {
+  background-color: white;
+}
+
+// 小号字体系列
+.font-small() {
+  font-size: 18rpx;
+}
+.font-small-bold() {
+  font-size: 18rpx;
+  font-weight: 400;
+}
+
+// 中号字体系列
+.font-medium() {
+  font-size: 24rpx;
+}
+.font-medium-bold() {
+  font-size: 24rpx;
+  font-weight: 400;
+}
+
+// 大号字体系列
+.font-large() {
+  font-size: 30rpx;
+}
+.font-large-bold() {
+  font-size: 30rpx;
+  font-weight: 400;
+}
+
+// 超大号字体系列
+.font-huge() {
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.font-huge-bold() {
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+
+// 弹性横向布局
+.flex-row(@AI: stretch; @JC: flex-start) {
+  display: flex;
+  flex-direction: row;
+  align-items: @AI;
+  justify-content: @JC;
+}
+
+// 弹性纵向布局
+.flex-column(@AI: stretch; @JC: flex-start) {
+  display: flex;
+  flex-direction: column;
+  align-items: @AI;
+  justify-content: @JC;
+}
+
+.svg-icon-user() {
+  background-image: url("data:image/svg+xml,%3Csvg width='130' height='130' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M63.444 64.996c20.633 0 37.359-14.308 37.359-31.953 0-17.649-16.726-31.952-37.359-31.952-20.631 0-37.36 14.303-37.358 31.952 0 17.645 16.727 31.953 37.359 31.953zM80.57 75.65H49.434c-26.652 0-48.26 18.477-48.26 41.27v2.664c0 9.316 21.608 9.325 48.26 9.325H80.57c26.649 0 48.256-.344 48.256-9.325v-2.663c0-22.794-21.605-41.271-48.256-41.271z' stroke='%23979797'/%3E%3C/svg%3E");
+}
+
+.svg-icon-arrow() {
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M512.03799 0 921.675981 411.648 102.4 411.648 512.03799 0ZM512.03799 995.328 102.4 583.68 921.675981 583.68 512.03799 995.328Z' stroke='%23979797'/%3E%3C/svg%3E");
+}
+
+@keyframes enter {
+  0% {
+    top: 100rpx;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.animation-enter() {
+  position: relative;
+  animation: enter 0.8s ease;
+}
+
+@keyframes down {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    top: 44px;
+    opacity: 1;
+  }
+}
+
+.animation-down() {
+  animation: down 0.8s ease;
+}
