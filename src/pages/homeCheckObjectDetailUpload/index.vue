@@ -74,7 +74,7 @@
             }
             // dep => console.log('formData', formData)
             mpvue.uploadFile({
-              url: 'http://120.55.234.38/api/PatrolInspection/reportWarning',
+              url: 'http://118.31.247.145:8088/PatrolInspection/reportWarning',
               fileType: 'image',
               fileName: 'file',
               filePath: this.pageData.infoList['上传照片'][0].value[0],

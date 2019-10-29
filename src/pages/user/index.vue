@@ -67,7 +67,7 @@
         const user = mpvue.getStorageSync({key: 'userInfo'}).data
 
         if (user.figureId != null && user.figureId.length > 0) {
-          this.pageData.userAvatar = 'http://120.55.234.38/api/getPicture?picture=' + user.figureId
+          this.pageData.userAvatar = 'http://118.31.247.145:8088/getPicture?picture=' + user.figureId
         }
 
         this.pageData.userName = user.name
@@ -121,7 +121,7 @@
       mpvue.getAuthCode({
         success: (res) => {
           mpvue.httpRequest({
-            url: 'http://120.55.234.38/api/inner/login',
+            url: 'http://118.31.247.145:8088/inner/login',
             method: 'POST',
             data: {
               authCode: res.authCode

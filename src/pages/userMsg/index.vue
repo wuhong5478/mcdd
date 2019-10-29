@@ -36,7 +36,7 @@
           limit: 50
         })).data.data.list.map(item => ({
           content: item.title,
-          img: 'http://120.55.234.38/api/getPicture?picture=' + item.titleImg,
+          img: 'http://118.31.247.145:8088/getPicture?picture=' + item.titleImg,
           date: this.$moment(item.createTime).format('YYYY-MM-DD h:mm')
         }))
         this.$forceUpdate()

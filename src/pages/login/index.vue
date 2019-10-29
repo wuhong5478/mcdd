@@ -36,7 +36,7 @@
         mpvue.getAuthCode({
           success: (res) => {
             mpvue.httpRequest({
-              url: 'http://120.55.234.38/api/inner/loginWithPhone',
+              url: 'http://118.31.247.145:8088/inner/loginWithPhone',
               method: 'POST',
               data: {
                 authCode: res.authCode,
@@ -57,6 +57,8 @@
                   role = 'wbry'
                 } else if (userRole === '2') {
                   role = 'gwh'
+                } else {
+                  role = 'wyjl'
                 }
                 res.data.data.user.deptName = res.data.data.deptName
                 mpvue.setStorageSync({
@@ -67,17 +69,17 @@
                   key: 'userInfo',
                   data: res.data.data.user
                 })
-                mpvue.switchTab({url: '../homeAuth/main'})
+                mpvue.navigateTo({url: '../homeAuth/main'})
                 } else {
                   mpvue.alert({content: res.data.message, buttonText: '确定'})
                 }
-            },
+              },
               fail: function (res) {
                 mpvue.alert({content: JSON.stringify(res)})
-            },
+              },
               complete: function (res) {
                 // mpvue.alert({content: 'complete'})
-            }
+              }
             })
         }
         })
@@ -88,7 +90,7 @@
         mpvue.getAuthCode({
           success: (res) => {
             mpvue.httpRequest({
-              url: 'http://120.55.234.38/api/inner/login',
+              url: 'http://118.31.247.145:8088/inner/login',
               method: 'POST',
               data: {
                 authCode: res.authCode
@@ -110,8 +112,9 @@
       } else {
         const userInfo = mpvue.getStorageSync({key: 'userInfo'}).data
         if (userInfo != null) {
-          mpvue.switchTab({url: '../homeAuth/main'})
-      }
+          // mpvue.switchTab({url: '../homeAuth/main'})
+          mpvue.navigateTo({url: '../homeAuth/main'})
+        }
      }
     }
   }

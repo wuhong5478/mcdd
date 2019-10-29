@@ -48,7 +48,7 @@
       <div class="content-X-title">
         园区隐患
       </div>
-      <div class="content-warn-item" v-for="item in pageData.warnList">
+      <div class="content-warn-item" v-for="item in pageData.warnList" :key="item">
         <div class="content-warn-item-title">
           <div class="content-warn-item-title-icon">
             <img src="/static/images/work/file_white_icon.png">
@@ -152,7 +152,7 @@
           let photoArr = []
           if (warnList[i].livePhoto != null) {
           if (warnList[i].livePhoto.indexOf('.') > 0) {
-            photoArr.push('http://120.55.234.38/api/getPicture?picture=' + warnList[i].livePhoto)
+            photoArr.push('http://118.31.247.145:8088/getPicture?picture=' + warnList[i].livePhoto)
           } else {
             const photo = (await this.$request('/taskwarn/getiotpictureUrl', 'GET', {
               deviceName: warnList[i].whole.equipment,

@@ -34,7 +34,7 @@
         火情报警
       </div>
       <div class="content-alert-main">
-        <div class="content-alert-main-item" v-for="item in trueAlertList"
+        <div class="content-alert-main-item" v-for="item in trueAlertList" :key="item"
              @click="handleTownAlertItemClick(item.whole)">
           <div class="content-alert-main-item-top">
             <div class="content-alert-main-item-top-title">{{item.title}}</div>
@@ -54,7 +54,7 @@
         火警报警
       </div>
       <div class="content-mission-main">
-        <div class="content-mission-main-item" v-for="item in mayAlertList"
+        <div class="content-mission-main-item" v-for="item in mayAlertList" :key="item"
              @click="handleAlertItemClick(item.whole)">
           <div class="content-mission-main-item-top">
             <div class="content-mission-main-item-top-title">{{item.title}}</div>
@@ -74,7 +74,7 @@
         待办巡检
       </div>
       <div class="content-patrol-main">
-        <div class="content-patrol-main-item" v-for="item in patrolList"
+        <div class="content-patrol-main-item" v-for="item in patrolList" :key="item"
              :style="{ 'background-image': 'url(' + item.back + ')' }" @click="handlePatrolItemClick(item.whole)">
           <div class="content-patrol-main-item-title">
             {{item.title}}
@@ -90,7 +90,7 @@
         待办隐患
       </div>
       <div class="content-problem-main">
-        <div class="content-problem-main-item" v-for="item in problemList"
+        <div class="content-problem-main-item" v-for="item in problemList" :key="item"
              @click="handleProblemItemClick(item.whole)">
           <div class="content-problem-main-item-top">
             <div class="content-problem-main-item-top-title">{{item.title}}</div>
@@ -107,7 +107,7 @@
         综合资讯
       </div>
       <div class="content-news-main">
-        <div class="content-news-main-item" v-for="item in newsList" @click="handleNewsItemClick">
+        <div class="content-news-main-item" v-for="item in newsList" :key="item" @click="handleNewsItemClick">
           <div class="content-news-main-item-left">
             <img :src="item.img">
           </div>
@@ -227,7 +227,7 @@
         })).data.data.list.map(item => ({
           title: item.title,
           author: item.author,
-          img: 'http://120.55.234.38/api/getPicture?picture=' + item.titleImg,
+          img: 'http://118.31.247.145:8088/getPicture?picture=' + item.titleImg,
           date: this.$moment(item.createTime).format('YYYY-MM-DD'),
           whole: item
         }))
@@ -302,11 +302,11 @@
     onShow () {
       this.handleFlashPage()
   },
-    created () {
+  created () {
       this.handleFlashPage()
   },
-    async onPullDownRefresh () {
-      await this.handleFlashPage()
+  async onPullDownRefresh () {
+    await this.handleFlashPage()
     mpvue.stopPullDownRefresh()
       mpvue.showToast({
         type: 'success',
@@ -315,7 +315,7 @@
         success: () => {
         }
       })
-  }
+    }
   }
 </script>
 

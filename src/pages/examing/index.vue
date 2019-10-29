@@ -152,7 +152,7 @@
          headers: {
            'Content-Type': 'application/json'
          },
-         url: 'http://120.55.234.38/api/userExam/hand?userId=' + userInfo.id,
+         url: 'http://118.31.247.145:8088/userExam/hand?userId=' + userInfo.id,
          method: 'POST',
          // 需要手动调用JSON.stringify将数据进行序列化
          data: JSON.stringify({

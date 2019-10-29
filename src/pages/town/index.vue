@@ -120,7 +120,8 @@
           xAxis: [1, 2, 3, 4, 5, 6, 7],
           yAxis: yAxis
         })
-        this.pageData.alertList = (await this.$request('/fireWarn/list', 'GET', {
+        try{
+          this.pageData.alertList = (await this.$request('/fireWarn/list', 'GET', {
           pageNo: 1,
           pageSize: 3,
           status: 2
@@ -129,6 +130,7 @@
           time: this.$moment(item.gmtCreate).format('YYYY-MM-DD h:mm'),
           whole: item
         }))
+        
         this.pageData.newsList = (await this.$request('/newsList', 'GET', {
           userId: userInfo.id,
           page: 1,
@@ -136,7 +138,7 @@
         })).data.data.list.map(item => ({
           title: item.title,
           author: item.author,
-          img: 'http://120.55.234.38/api/getPicture?picture=' + item.titleImg,
+          img: 'http://118.31.247.145:8088/getPicture?picture=' + item.titleImg,
           date: this.$moment(item.createTime).format('YYYY-MM-DD h:mm'),
           whole: item
         }))
@@ -170,6 +172,11 @@
         this.pageConfig.currentTime = new Date(+new Date() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '')
         this.pageConfig.currentHour = mydate.getHours()
         this.$forceUpdate()
+        }catch(err){
+          console.log('err==>', err)
+
+        }
+        
       },
       sortData (a, b) {
         return Number(b.score) - Number(a.score)

@@ -147,7 +147,7 @@
           return false
         }
         mpvue.uploadFile({
-          url: 'http://120.55.234.38/api/fireWarn/sendFire',
+          url: 'http://118.31.247.145:8088/fireWarn/sendFire',
           fileType: 'image',
           fileName: 'file',
           filePath: this.pageData.infoList['现场照片'][0].value[0],

@@ -59,7 +59,7 @@
         }
         const userInfo = mpvue.getStorageSync({key: 'userInfo'}).data
         mpvue.uploadFile({
-          url: 'http://120.55.234.38/api/appStatistics/updateHeadPortrait',
+          url: 'http://118.31.247.145:8088/appStatistics/updateHeadPortrait',
           fileType: 'image',
           fileName: 'headPortrait',
           filePath: this.image,

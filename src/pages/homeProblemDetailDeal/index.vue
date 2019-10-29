@@ -69,7 +69,7 @@
       },
       handleDealClick () {
         mpvue.uploadFile({
-          url: 'http://120.55.234.38/api/AppWarning/handleWarning',
+          url: 'http://118.31.247.145:8088/AppWarning/handleWarning',
           fileType: 'image',
           fileName: 'img',
           filePath: this.image,

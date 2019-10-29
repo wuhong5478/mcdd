@@ -175,7 +175,7 @@
           return false
         }
         mpvue.uploadFile({
-          url: 'http://120.55.234.38/api/taskwarn/addtaskwarn',
+          url: 'http://118.31.247.145:8088/taskwarn/addtaskwarn',
           fileType: 'image',
           fileName: 'file',
           filePath: this.image,

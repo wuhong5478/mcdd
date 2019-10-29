@@ -93,7 +93,7 @@ export default {
       const descArr = JSON.parse(orderList[i].con)
       for (let j = 0; j < descArr.length; j++) {
         if (descArr[j].name === '图片') {
-          this.pageData.image = 'http://120.55.234.38/api/getPicture?picture=' + descArr[j].data
+          this.pageData.image = 'http://118.31.247.145:8088/getPicture?picture=' + descArr[j].data
         }
       }
     }

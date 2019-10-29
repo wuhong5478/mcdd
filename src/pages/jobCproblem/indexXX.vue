@@ -86,7 +86,7 @@
       handleDealClick () {
         const levalConfig = ['', '特级重大', '重大', '较大', '一般']
         mpvue.uploadFile({
-          url: 'http://120.55.234.38/api/taskwarn/addtaskwarn',
+          url: 'http://118.31.247.145:8088/taskwarn/addtaskwarn',
           fileType: 'image',
           fileName: 'file',
           filePath: this.pageData.infoList['上传照片'][0].value[0],

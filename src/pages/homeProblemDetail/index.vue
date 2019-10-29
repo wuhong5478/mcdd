@@ -57,7 +57,7 @@
       this.pageData.infoList['no-title'][1].value = this.pageData.infoWhole.type || ''
       this.pageData.infoList['no-title'][2].value = this.pageData.infoWhole.place || ''
       this.pageData.infoList['no-title'][3].value = this.pageData.infoWhole.hiddenDescript || ''
-      this.pageData.infoList['照片'][0].url = this.pageData.infoWhole.livePhoto ? `http://120.55.234.38/api/getPicture?picture=${this.pageData.infoWhole.livePhoto}` : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567848143512&di=7bd79056e926ad17f296e8c58e00e901&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180118%2Fa0163c6be9d247918669229bed6c7280.png'
+      this.pageData.infoList['照片'][0].url = this.pageData.infoWhole.livePhoto ? `http://118.31.247.145:8088/getPicture?picture=${this.pageData.infoWhole.livePhoto}` : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567848143512&di=7bd79056e926ad17f296e8c58e00e901&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180118%2Fa0163c6be9d247918669229bed6c7280.png'
       let role = mpvue.getStorageSync({key: 'role'}).data
       if (role === 'gwh') {
         this.pageData.infoList[' '] = {}
