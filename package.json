@@ -28,7 +28,7 @@
     "less-loader": "^5.0.0",
     "mini-antui": "^0.4.29",
     "mini-circleprogress": "^1.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mpvue": "^2.0.0",
     "mpvue-echarts": "^0.3.1",
     "mpvue-htmlparse": "^1.0.2",
